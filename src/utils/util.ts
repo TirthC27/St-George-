@@ -1,7 +1,6 @@
 const getImagePrefix = () => {
-    return process.env.NODE_ENV === "production"
-        ? "/E-learning/"
-        : "";
+    // For Vercel deployment, we use "/" for both development and production
+    return "/";
 };
 
 export { getImagePrefix };
