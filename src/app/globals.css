@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ultra smooth scrolling foundation */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Advanced GPU acceleration */
+@media (min-resolution: 2dppx) {
+  * {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Account for fixed header */
+  /* Ultra smooth scrolling */
+  scroll-snap-type: y proximity;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* Enhanced smoothness */
+  overscroll-behavior: none;
+  scroll-timeline: --page-scroll;
+}
+
+/* Ultra smooth container */
+#__next {
+  isolation: isolate;
+}
+
+/* Enhanced smooth scrolling for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #A0522D, #8B4513);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #8B4513, #A0522D);
+  transform: scale(1.1);
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced performance for smooth scrolling */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Ultra smooth rendering */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* GPU acceleration for better performance */
+.smooth-scroll {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  /* Enhanced GPU acceleration */
+  will-change: transform;
+  contain: layout style paint;
+}
+
+/* Ultra smooth animations */
+* {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* Smooth momentum for all scrollable elements */
+* {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Enhanced smooth scrolling for all elements */
+html, body, div, section, article, main {
+  scroll-behavior: smooth !important;
+  -webkit-scroll-behavior: smooth !important;
+}
+
+/* Ultra smooth transitions */
+*, *::before, *::after {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-duration: 0.3s;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+section {
+  @apply py-20;
+  scroll-margin-top: 80px; /* Account for fixed header when scrolling to sections */
+  will-change: transform; /* Optimize for animations */
+  /* Ultra smooth section transitions */
+  contain: layout style paint;
+  transform: translateZ(0);
+}
+
+/* Smooth momentum scrolling for iOS */
+body {
+  -webkit-overflow-scrolling: touch;
+  /* Enhanced iOS smoothness */
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+/* Ultra smooth page transitions */
+main {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Smooth image loading */
+img {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Enhanced smooth scrolling for webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #A0522D, #8B4513);
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #8B4513, #A0522D);
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(160, 82, 45, 0.5);
+}
+
+/* Ultra smooth corner */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.slick-dots {
+  color: #A0522D;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #A0522D !important;
+}
+
+.slick-dots li button:before {
+  font-size: 11px !important;
+}
