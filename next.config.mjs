@@ -1,13 +1,22 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === "production";
-
 const nextConfig = {
-  basePath: isProd ? "/E-learning" : "",
-  assetPrefix: isProd ? "/E-learning/" : "",
-  output: "export",
+  // Optimized for Vercel deployment
   images: {
-    unoptimized: true,
+    domains: [], // Add any external image domains here if needed
+    formats: ['image/webp', 'image/avif'],
   },
+  // Enable compression
+  compress: true,
+  // Optimize for production
+  swcMinify: true,
+  // Enable experimental features - disabled optimizeCss due to critters dependency issue
+  experimental: {
+    // optimizeCss: true, // Disabled temporarily for deployment
+  },
+  // Ensure proper static generation
+  trailingSlash: false,
+  // Enable React strict mode
+  reactStrictMode: true,
 };
 
 export default nextConfig;
