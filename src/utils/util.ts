@@ -1,6 +1,6 @@
 const getImagePrefix = () => {
-    // For Vercel deployment, we use "/" for both development and production
-    return "/";
+    // Return empty string since image paths in data already start with "/"
+    return "";
 };
 
 export { getImagePrefix };

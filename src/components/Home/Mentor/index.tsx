@@ -126,7 +126,7 @@ const Mentor = () => {
                                             }}
                                             whileTap={{ scale: 0.9 }}
                                         >
-                                            <Image src={`${getImagePrefix()}images/mentor/linkedin.svg`} alt="linkedin-image" width={25} height={24} />
+                                            <Image src={`${getImagePrefix()}/images/mentor/linkedin.svg`} alt="linkedin-image" width={25} height={24} />
                                         </motion.div>
                                     </div>
                                     <motion.div

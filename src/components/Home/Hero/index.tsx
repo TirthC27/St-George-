@@ -116,7 +116,7 @@ const Hero = () => {
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
-                                <Image src={`${getImagePrefix()}images/banner/check-circle.svg`} alt="check-image" width={30} height={30} className='smallImage' />
+                                <Image src={`${getImagePrefix()}/images/banner/check-circle.svg`} alt="check-image" width={30} height={30} className='smallImage' />
                                 <p className='text-sm sm:text-lg font-normal text-black'>Quality Education</p>
                             </motion.div>
                             <motion.div
@@ -124,7 +124,7 @@ const Hero = () => {
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
-                                <Image src={`${getImagePrefix()}images/banner/check-circle.svg`} alt="check-image" width={30} height={30} className='smallImage' />
+                                <Image src={`${getImagePrefix()}/images/banner/check-circle.svg`} alt="check-image" width={30} height={30} className='smallImage' />
                                 <p className='text-sm sm:text-lg font-normal text-black'>Modern Facilities</p>
                             </motion.div>
                             <motion.div
@@ -132,7 +132,7 @@ const Hero = () => {
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
-                                <Image src={`${getImagePrefix()}images/banner/check-circle.svg`} alt="check-image" width={30} height={30} className='smallImage' />
+                                <Image src={`${getImagePrefix()}/images/banner/check-circle.svg`} alt="check-image" width={30} height={30} className='smallImage' />
                                 <p className='text-sm sm:text-lg font-normal text-black'>Expert Faculty</p>
                             </motion.div>
                         </motion.div>
@@ -148,7 +148,7 @@ const Hero = () => {
                             whileHover={{ scale: 1.05 }}
                             transition={{ type: "spring", stiffness: 300 }}
                         >
-                            <Image src={`${getImagePrefix()}images/banner/mahila.png`} alt="nothing" width={1000} height={805} />
+                            <Image src={`${getImagePrefix()}/images/banner/mahila.png`} alt="nothing" width={1000} height={805} />
                         </motion.div>
                     </motion.div>
                 </div>
