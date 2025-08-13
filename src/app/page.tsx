@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Hero from "@/components/Home/Hero";
-import Companies from "@/components/Home/Companies";
 import Courses from "@/components/Home/Courses";
 import Mentor from "@/components/Home/Mentor";
 import Testimonial from "@/components/Home/Testimonials";
@@ -38,9 +37,6 @@ export default function Home() {
     >
       <motion.div variants={sectionVariants}>
         <Hero />
-      </motion.div>
-      <motion.div variants={sectionVariants}>
-        <Companies />
       </motion.div>
       <motion.div variants={sectionVariants}>
         <Courses />
